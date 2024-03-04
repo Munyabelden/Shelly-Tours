@@ -1,9 +1,22 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
+      <Navbar />
+
+      <div className="container mx-auto mt-8">
+        <Routes>
+          <Route path="/" component={<Home />} />
+          <Route path="/about" component={<About />} />
+          <Route path="/contact" component={<Contact />} />
+        </Routes>
+      </div>
     </div>
   );
 }
