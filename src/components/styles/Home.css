@@ -1,5 +1,60 @@
 .header-home {
-  height: 90vh;
+  position: relative;
+  height: 95vh;
   width: 100%;
-  background-image: url('../assets/small.jpg');
+  background-image: url('../assets/40153.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -2rem;
+  left: 0;
+}
+
+.header-p {
+  background: rgba(18, 23, 33, 0.8);
+  width: 100%;
+  height: 100%;
+  padding-top: 12rem;
+  padding-inline: 3.75% 25%;
+  color: #dfe5ea;
+}
+
+.header-p p {
+  margin-bottom: 25px;
+}
+
+.learn-more {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(233, 179, 79);
+  margin-top: 25px;
+  border: none;
+  background: none;
+}
+
+.learn-more::after {
+  content: '';
+  display: block;
+  text-align: center;
+  width: 0;
+  height: 1.25px;
+  position: relative;
+  background: rgb(233, 179, 79);
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+.learn-more:hover::after {
+  width: 100%;
+}
+
+.home-about img {
+  width: 700px;
+}
+
+.home-about {
+  
 }
