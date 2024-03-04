@@ -9,12 +9,11 @@ const App = () => {
   return (
     <div>
       <Navbar />
-
       <div className="container mx-auto mt-8">
         <Routes>
-          <Route path="/" component={<Home />} />
-          <Route path="/about" component={<About />} />
-          <Route path="/contact" component={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </div>
