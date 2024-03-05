@@ -39,8 +39,29 @@ h1::after{
   background: rgb(136, 93, 12);
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+h2::after{
+  content: '';
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 12%;
+  background: rgb(232, 161, 29);
+  margin-top: 15px;
+}
+
 p {
   font-size: 17px;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 img {
