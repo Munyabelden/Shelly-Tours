@@ -15,8 +15,8 @@ const Home = () => {
           
         </div>
       </div>
-      <section className="main m-4 p-4">
-        <div className="home-about">
+      <section className="main">
+        <div className="home-about m-4 p-4">
             <span>Get to know us better</span>
             <h2>Shelly tours: live life internationally</h2>
             <div className="flex flex-row items-start justify-around">
@@ -40,6 +40,14 @@ const Home = () => {
             </div>
           </div>
           <button type="button" className="home-tours-button self-center">Discover more tours and services</button>
+        </div>
+        <div className="why-us p-8">
+          <h2>Why Choose Us</h2>
+          <div>
+            <p>
+              At Shelly Tours, we believe that our competitive advantage lies in our unwavering commitment to exceptional customer service, reliable transportation services, including hotel bookings, and the safety and security of our customers. Unlike our competitors, we prioritize the individual needs and preferences of our customers, ensuring that every aspect of their journey is tailored to perfection. Our team of experienced and knowledgeable tour guides and drivers are dedicated to providing personalized attention and creating memorable experiences. Furthermore, our focus on quality and expertise sets us apart in the industry, particularly evident in our wine tasting tours and private safari tours.
+            </p>
+          </div>
         </div>
       </section>
     </div>
