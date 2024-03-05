@@ -27,6 +27,20 @@ const Home = () => {
               <img src={Shelly} />
             </div>
         </div>
+        <div className="shelly-tours flex flex-col items-start">
+          <div className="tours flex flex-row justify-between w-full">
+            <div className="tour-1 tour">
+              <span><strong>Wine</strong><br></br> Tours</span>
+            </div>
+            <div className="tour-2 tour">
+              <span><strong>Safari</strong><br></br> Tours</span> 
+            </div>
+            <div className="tour-3 tour">
+              <span><strong>Cape Of Good Hope</strong><br></br> Sightseeing</span> 
+            </div>
+          </div>
+          <button type="button" className="home-tours-button self-center">Discover more tours and services</button>
+        </div>
       </section>
     </div>
   )
