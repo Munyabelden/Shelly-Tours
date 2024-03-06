@@ -1,0 +1,54 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background: rgb(57, 56, 55);
+  padding: 50px 5%;
+}
+
+.footer-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-details p {
+  width: 80%;
+}
+
+.footer h2 {
+  
+}
+
+.footer h2,
+.footer p {
+  color: #fff;
+}
+
+.footer button {
+  font-size: 18px;
+  font-weight: 400;
+  background: rgb(209, 128, 47);
+  padding: 10px 15px;
+  margin-block: 25px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.footer div ul {
+  margin-left: -40px;
+  color: rgb(176, 171, 168);
+  font-weight: 500;
+}
+
+.footer > span {
+  color: rgb(123, 119, 117);
+}
+
+.footer div ul li:last-child {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
