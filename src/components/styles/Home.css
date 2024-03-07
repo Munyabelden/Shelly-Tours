@@ -15,6 +15,11 @@
   background-image: url('../assets/businesswoman-getting-taxi-cab.jpg');
 }
 
+.header-home.services {
+  background-image: url('../assets/diverse-business-colleagues-shoo.jpg');
+  height: 75vh;
+}
+
 .header-p {
   background: rgba(18, 23, 33, 0.8);
   width: 100%;

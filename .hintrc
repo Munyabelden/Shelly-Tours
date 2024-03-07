@@ -9,7 +9,8 @@
         "ignore": [
           "padding-inline",
           "margin-inline",
-          "margin-block"
+          "margin-block",
+          "padding-block"
         ]
       }
     ]

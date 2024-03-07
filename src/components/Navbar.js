@@ -14,6 +14,9 @@ const Navbar = () => {
           <NavLink to="/" isActive={() => location.pathname = '/' } className="text-white" activeClassName="border-b-2 border-white">
             Home
           </NavLink>
+          <NavLink to="/services" isActive={() => location.pathname = '/' } className="text-white" activeClassName="border-b-2 border-white">
+            Services
+          </NavLink>
           <NavLink to="/about" className="text-white" activeClassName="border-b-2 border-white">
             About
           </NavLink>
