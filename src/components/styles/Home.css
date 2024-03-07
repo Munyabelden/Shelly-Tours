@@ -11,6 +11,10 @@
   margin-bottom: 4rem;
 }
 
+.header-home.about {
+  background-image: url('../assets/businesswoman-getting-taxi-cab.jpg');
+}
+
 .header-p {
   background: rgba(18, 23, 33, 0.8);
   width: 100%;

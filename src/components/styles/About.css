@@ -1,0 +1,44 @@
+.values-section {
+  margin-bottom: 140px;
+}
+
+.values-section .values {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.values .value {
+  width: 32%;
+  padding-inline: 50px;
+}
+
+.value h3 {
+  color: rgb(228, 130, 26);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.value p {
+  text-align: center;
+}
+
+.who-we-are {
+  display: flex;
+  flex-direction: row;
+}
+
+.who-we-are img {
+  width: 50%;
+}
+
+.who-we-are div {
+  background: rgb(228, 164, 26);
+}
+
+.who-we-are div p:last-child {
+    margin-top: 40px;
+}

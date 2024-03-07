@@ -15,10 +15,6 @@
   width: 80%;
 }
 
-.footer h2 {
-  
-}
-
 .footer h2,
 .footer p {
   color: #fff;
@@ -27,14 +23,14 @@
 .footer button {
   font-size: 18px;
   font-weight: 400;
-  background: rgb(209, 128, 47);
+  background: rgb(209, 158, 47);
   padding: 10px 15px;
   margin-block: 25px;
-  border-radius: 15px;
+  -o-border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: 15px;
 }
 
 .footer div ul {
@@ -44,11 +40,11 @@
 }
 
 .footer > span {
-  color: rgb(123, 119, 117);
+  color: rgb(179, 173, 170);
+  margin-top: 30px;
 }
 
 .footer div ul li:last-child {
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 32px;
 }
-
