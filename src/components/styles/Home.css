@@ -23,6 +23,7 @@
 .header-home.contact {
   background: rgb(233, 179, 79);
   height: 70vh;
+  z-index: -1;
 }
 
 .header-p {

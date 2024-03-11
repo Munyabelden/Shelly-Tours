@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/Contact.css';
+import Footer from './Footer';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -85,6 +86,7 @@ const ContactForm = () => {
           
         </div>
       </div>
+      <div className="form-div">
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
             <div className="mb-4">
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-600">
@@ -155,11 +157,13 @@ const ContactForm = () => {
 
             <button
                 type="submit"
-                className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+                className="px-4 py-2 text-white bg-gray-800 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
             >
                 Submit
             </button>
         </form>
+      </div>
+      <Footer />
     </div>
   );
 };
