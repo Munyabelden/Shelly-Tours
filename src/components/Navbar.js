@@ -1,16 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const location = useLocation();
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const scrollThreshold = 50; // Adjust the threshold as needed
+
+      setIsScrolled(scrollPosition > scrollThreshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="p-4">
+    <nav className={`p-6 ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-white text-lg font-bold">
           Shelly Tours

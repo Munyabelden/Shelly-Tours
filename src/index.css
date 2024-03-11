@@ -29,14 +29,22 @@ h1 {
   margin-bottom: 20px;
 }
 
-h1::after{
+h1::after {
   content: '';
   display: block;
   position: relative;
   height: 2px;
-  width: 30%;
+  width: 0; 
   background: rgb(136, 93, 12);
+  animation: growLine 1s ease-out forwards; 
 }
+
+@keyframes growLine {
+  to {
+    width: 30%;
+  }
+}
+
 
 h2 {
   font-size: 36px;
@@ -72,12 +80,22 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   z-index: 10000;
-  margin-inline: 2%;
+  padding-inline: 4%;
+  -o-transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+nav.scrolled {
+  background: rgb(128, 124, 120)
 }
 
 .navigation a {
+  top: -10px;
   margin-left: 15px;
 }
 
@@ -148,5 +166,6 @@ nav {
 
   h1::after {
     width: 60%;
+    margin-top: 20px;
   }
 }

@@ -30,9 +30,20 @@
 @media (max-width: 900px) {
   .contact-head {
     padding: 0;
+    width: 94%;
+  }
+
+  .contact-head * {
+    padding-block: 50px;
+    margin: 0;
   }
 
   .contact-head h1 {
     font-size: 40px;
+  }
+
+  .form-div {
+    margin-top: 2rem;
+    width: 94%;
   }
 }
