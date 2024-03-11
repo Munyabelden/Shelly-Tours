@@ -26,3 +26,13 @@
   margin-inline: auto;
   z-index: 10;
 }
+
+@media (max-width: 900px) {
+  .contact-head {
+    padding: 0;
+  }
+
+  .contact-head h1 {
+    font-size: 40px;
+  }
+}
