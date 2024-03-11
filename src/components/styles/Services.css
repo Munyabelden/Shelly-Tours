@@ -112,3 +112,28 @@
 .drop-off {
   background-image: url('../assets/businessman-holding-luggage-business-trip.jpg');
 }
+
+@media (max-width: 780px) {
+  .shelly-services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    width: 95%;
+    margin-inline: auto;
+  }
+
+  .service div {
+    background: rgba(58, 55, 50, 0.7);
+  }
+
+  .service div p {
+    position: relative;
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+}
