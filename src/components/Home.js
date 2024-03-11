@@ -19,7 +19,7 @@ const Home = () => {
           
         </div>
       </div>
-      <section className="main">
+      <section>
         <div className="home-about m-4 p-4">
             <span>Get to know us better</span>
             <h2>Shelly tours: live life internationally</h2>
@@ -45,7 +45,7 @@ const Home = () => {
           </div>
           <button type="button" className="home-tours-button self-center">Discover more tours and services</button>
         </div>
-        <div className="why-us p-8">
+        <div className="why-us ">
           <h2>Why Choose Us</h2>
           <div className="why-us-p">
             <p>

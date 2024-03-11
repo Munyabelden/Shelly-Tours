@@ -67,6 +67,17 @@
   width: 100%;
 }
 
+@media (max-width: 900px) {
+  .header-home {
+    height: 100vh;
+  }
+
+  .header-p {
+    padding-inline: 3.75%;
+    padding-top: 7rem;
+  }
+}
+
 .home-about {
   margin-bottom: 40px;
 }
@@ -115,6 +126,17 @@
 
 .more-about:hover::after {
   width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .home-about > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-about p {
+    margin-top: 20px;
+  }
 }
 
 .shelly-tours {
@@ -208,6 +230,19 @@
   width: 264px;
 }
 
+@media (max-width: 800px) {
+  .tours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tour {
+    width: 90%;
+    margin-bottom: 5px;
+  }
+}
+
 .why-us {
   display: flex;
   flex-direction: row;
@@ -228,7 +263,6 @@
 
 .why-us-p {
   position: relative;
-  right: 0;
   background: rgb(233, 179, 79);
   width: 500px;
   padding: 40px;
@@ -256,6 +290,25 @@
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .why-us {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 5%;
+  }
+
+  .why-us h2 {
+    color: rgb(36, 34, 33);
+  }
+
+  .why-us-p {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 95%;
+    padding-inline: 13px;
+  }
 }
 
 .vision {
@@ -297,4 +350,20 @@
   position: relative;
   background: rgb(233, 179, 79);
   margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+
+  .vision {
+    margin-inline: 5%;
+  }
+
+  .objectives {
+    flex-direction: column;
+  }
+
+  .objective {
+    width: 90%;
+    margin-bottom: 70px;
+  }
 }

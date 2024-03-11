@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-white focus:outline-none menu"
             aria-label="Toggle Menu"
           >
             {isMenuOpen ? (
@@ -56,7 +56,7 @@ const Navbar = () => {
         </div>
         <div
           className={`${
-            isMenuOpen ? 'block' : 'hidden'
+            isMenuOpen ? 'render' : ''
           } lg:flex space-x-4 navigation flex`}
         >
           <NavLink
@@ -64,6 +64,7 @@ const Navbar = () => {
             isActive={() => location.pathname === '/'}
             className="text-white"
             activeClassName="border-b-2 border-white"
+            onClick={toggleMenu}
           >
             Home
           </NavLink>
@@ -72,6 +73,7 @@ const Navbar = () => {
             isActive={() => location.pathname === '/services'}
             className="text-white"
             activeClassName="border-b-2 border-white"
+            onClick={toggleMenu}
           >
             Services
           </NavLink>
@@ -80,6 +82,7 @@ const Navbar = () => {
             isActive={() => location.pathname === '/about'}
             className="text-white"
             activeClassName="border-b-2 border-white"
+            onClick={toggleMenu}
           >
             About
           </NavLink>
@@ -88,6 +91,7 @@ const Navbar = () => {
             isActive={() => location.pathname === '/contact'}
             className="text-white"
             activeClassName="border-b-2 border-white"
+            onClick={toggleMenu}
           >
             Contact
           </NavLink>
