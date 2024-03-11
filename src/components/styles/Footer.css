@@ -48,3 +48,14 @@
   margin-top: 20px;
   font-size: 32px;
 }
+
+@media (max-width: 850px) {
+  .footer-details {
+    flex-direction: column-reverse;
+  }
+
+  .footer div ul {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
