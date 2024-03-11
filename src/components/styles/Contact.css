@@ -1,0 +1,19 @@
+.contact-head {
+  background-image: url('../assets/adorable-cheerful-young-lady-working-home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 85%;
+  height: 90%;
+  padding-top: 7.2rem;
+  padding-inline: 3.75% 25%;
+  color: #dfe5ea;
+}
+
+.contact-head * {
+  background: rgba(18, 23, 33, 0.8);
+  padding: 25px 40px;
+  margin: 0;
+}
+
+

@@ -20,6 +20,11 @@
   height: 75vh;
 }
 
+.header-home.contact {
+  background: rgb(233, 179, 79);
+  height: 70vh;
+}
+
 .header-p {
   background: rgba(18, 23, 33, 0.8);
   width: 100%;
