@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import './styles/Home.css';
 import Shelly from './assets/18683.jpg';
@@ -7,13 +8,23 @@ import midterm from './assets/authentic-small-youthful-marketing-agency.jpg';
 import shortterm from './assets/business-executives-reading-sticky-notes.jpg';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const goToServices = () => {
+    navigate('/services')
+  };
+
+  const goToContacts = () => {
+    navigate('/contact')
+  };
+
   return (
     <div className="home">
       <div className="header-home">
         <div className="header-p">
           <h1>Experience is everything</h1>
           <p>Specializing in airport transfer and tourism services, including hotel bookings. We aim to provide exceptional customer service and reliable transportation solutions for Luxury Vacationers, Frequent Business travelers, and Family Vacationers. Our distribution channels include both online platforms and a physical location, ensuring convenience and accessibility for our diverse customer segments. With a team of 50 dedicated employees, we are committed to delivering unforgettable experiences and creating lasting memories for our customers.</p>
-          <button className="learn-more">Learn more about our tours {'>'} </button>
+          <button onClick={goToServices} className="learn-more">Learn more about our tours {'>'} </button>
         </div>
         <div>
           
@@ -26,7 +37,7 @@ const Home = () => {
             <div className="flex flex-row items-start justify-around">
               <div>
                 <p>Shelly Tours operates in the thriving airport transfer and tourism industry in Cape Town, South Africa. As an upcoming unlaunched business, we are poised to make a significant impact by providing efficient and reliable services to luxury vacationers in the region. Our distribution channels include both online platforms and a physical location, ensuring convenience and accessibility for our customers. The tourism industry in Cape Town is a key driver of economic growth, attracting millions of visitors each year. With its stunning landscapes, vibrant culture, and rich history, Cape Town has become a popular destination for both domestic and international travelers. As a result, the demand for airport transfer services has been steadily increasing.</p>
-                <button className="more-about">Find out more {'>'}</button>
+                <button onClick={goToServices} className="more-about">Find out more {'>'}</button>
               </div>
               <img src={Shelly} />
             </div>
@@ -51,7 +62,7 @@ const Home = () => {
             <p>
               At Shelly Tours, we believe that our competitive advantage lies in our unwavering commitment to exceptional customer service, reliable transportation services, including hotel bookings, and the safety and security of our customers. Unlike our competitors, we prioritize the individual needs and preferences of our customers, ensuring that every aspect of their journey is tailored to perfection. Our team of experienced and knowledgeable tour guides and drivers are dedicated to providing personalized attention and creating memorable experiences. Furthermore, our focus on quality and expertise sets us apart in the industry, particularly evident in our wine tasting tours and private safari tours.
             </p>
-            <button type="button" className="why-us-btn">Book an appointment</button>
+            <button onClick={goToContacts} type="button" className="why-us-btn">Book an appointment</button>
           </div>
         </div>
         <div className="vision">

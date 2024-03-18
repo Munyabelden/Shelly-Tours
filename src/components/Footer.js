@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles/Footer.css';
 
 const Footer = () => {
+  const navigate = useNavigate()
+
+  const goToContacts = () => {
+    navigate('/contact')
+  };
+
   return (
     <div className="footer">
       <div className="map">
@@ -12,7 +19,7 @@ const Footer = () => {
           <h2>Cape Town</h2>
           <p>Discover the breathtaking beauty of Cape Town: where vibrant culture meets stunning landscapes, creating unforgettable memories at the tip of Africa!</p>
           <p>Email shellytours@gmail.co.za</p>
-          <button type="button">Contact Us</button>
+          <button onClick={goToContacts} type="button">Contact Us</button>
         </div>
         <ul>
           <li><span>Wine Tasting Tours</span></li>
