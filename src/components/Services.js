@@ -53,8 +53,62 @@ const Services = () => {
         <div>
           <h3>Hotel Pickup and Drop offs</h3>
           <p>Experience the pinnacle of convenience and luxury with our hotel pick-up and drop-off services. We understand the importance of a seamless transition between your accommodation and your destinations, and we've curated a service that embodies comfort, punctuality, and a touch of sophistication.</p>
-          </div>
+          </div> 
         </div>
+          <div className="service table">
+            <h3>Table Mountain Tour/hiking</h3>
+          </div>
+          <div className="service light lion">
+            <h3>Lion's Head/hiking</h3>
+          </div>
+          <div className="service hill">
+            <h3>Signal hill Sunrise and sunset.</h3>
+          </div>
+          <div className="service museum">
+            <h3>The City tour, Waterfront,  Aquarium, Boakap, Museums around the City.</h3>
+          </div>
+          <div className="service garden light">
+            <h3>Kirstonbosch Botanical Gardens</h3>
+          </div>
+          <div className="service beach light">
+            <h3>Camps Bay Beach, The Clifton 1-4</h3>
+          </div>
+          <div className="service robben">
+            <h3>Robben Island</h3>
+          </div>
+          <div className="service heli light">
+            <h3>Helicopter Tour</h3>
+          </div>
+          <div className="service red-bus">
+            <h3>City Sight Seeing Red Bus</h3>
+          </div>
+          <div className="service herm">
+            <h3>Hermanus Tour</h3>
+          </div>
+          <div className="service route">
+            <h3>The Garden Route Tour....... Which is the most exciting tour more than anything else.</h3>
+          </div>
+          <div className="service knysna">
+            <h3>Knysna Heads& Elephant park</h3>
+          </div>
+          <div className="service robberge">
+            <h3>Robberg National park Hiking</h3>
+          </div>
+          <div className="service driving">
+            <h3>Wilderness driving experience</h3>
+          </div>
+          <div className="service agulus">
+            <h3>Cape Agulus</h3>
+          </div>
+          <div className="service bridge light">
+            <h3>Tsitsikame Bridge/ Blouk</h3>
+          </div>
+          <div className="service monkey">
+            <h3>Monkyland</h3>
+          </div>
+          <div className="service caves">
+            <h3>Cango Caves</h3>
+          </div>
       </section>
       <Footer />
     </div>

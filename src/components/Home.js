@@ -50,7 +50,7 @@ const Home = () => {
               <span><strong>Cape Of Good Hope</strong><br></br> Sightseeing</span> 
             </div>
           </div>
-          <button type="button" className="home-tours-button self-center">Discover more tours and services</button>
+          <button type="button" className="home-tours-button self-center" onClick={goToServices}>Discover more tours and services</button>
         </div>
         <div className="why-us ">
           <h2>Why Choose Us</h2>
