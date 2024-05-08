@@ -1,7 +1,3 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 *,
 *::after,
 *::before {
@@ -62,6 +58,11 @@ h2::after{
   margin-top: 15px;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 p {
   font-size: 17px;
 }
@@ -69,6 +70,7 @@ p {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 img {
@@ -76,27 +78,55 @@ img {
   height: auto;
 }
 
-nav {
+nav .container {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(52, 53, 54);
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10000;
-  padding-inline: 4%;
+  padding-inline: 5%;
+  padding-block: 15px;
   -o-transition: all 250ms ease-in-out;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav .container span {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(237, 166, 99);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
 }
 
 nav.scrolled {
   background: rgb(128, 124, 120)
 }
 
-.navigation a {
-  top: -10px;
-  margin-left: 15px;
+.navigation .nav-link {
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .navigation a::after {
@@ -118,11 +148,19 @@ nav.scrolled {
 }
 
 .menu {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
   position: relative;
   z-index: 10000;
 }
 
 @media (max-width: 1000px) {
+  .menu {
+    display: block;
+  }
+
   .navigation {
     position: fixed;
     top: 0;
@@ -155,8 +193,8 @@ nav.scrolled {
     transform: translateX(0);
   }
 
-  .navigation a {
-    font-size: 20px;
+  .navigation .nav-link {
+    font-size: 24px;
     font-weight: 600;
   }
 

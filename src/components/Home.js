@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import './styles/Home.css';
-import Shelly from './assets/18683.jpg';
 import longterm from './assets/time-is-passing-blue-hourglass-close-up.jpg';
 import midterm from './assets/authentic-small-youthful-marketing-agency.jpg';
 import shortterm from './assets/business-executives-reading-sticky-notes.jpg';
@@ -31,19 +30,16 @@ const Home = () => {
         </div>
       </div>
       <section>
-        <div className="home-about m-4 p-4">
+        <div className="home-about">
             <span>Get to know us better</span>
             <h2>Shelly tours: live life internationally</h2>
-            <div className="flex flex-row items-start justify-around">
-              <div>
+            <div>
                 <p>Shelly Tours operates in the thriving airport transfer and tourism industry in Cape Town, South Africa. As an upcoming unlaunched business, we are poised to make a significant impact by providing efficient and reliable services to luxury vacationers in the region. Our distribution channels include both online platforms and a physical location, ensuring convenience and accessibility for our customers. The tourism industry in Cape Town is a key driver of economic growth, attracting millions of visitors each year. With its stunning landscapes, vibrant culture, and rich history, Cape Town has become a popular destination for both domestic and international travelers. As a result, the demand for airport transfer services has been steadily increasing.</p>
                 <button onClick={goToServices} className="more-about">Find out more {'>'}</button>
-              </div>
-              <img src={Shelly} />
             </div>
         </div>
-        <div className="shelly-tours flex flex-col items-start">
-          <div className="tours flex flex-row justify-between w-full">
+        <div className="shelly-tours">
+          <div className="tours">
             <div className="tour-1 tour">
               <span><strong>Wine Tasting</strong><br></br> Tours</span>
             </div>

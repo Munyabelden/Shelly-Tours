@@ -13,14 +13,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const scrollThreshold = 50; // Adjust the threshold as needed
+      const scrollThreshold = 50;
 
       setIsScrolled(scrollPosition > scrollThreshold);
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -28,9 +27,9 @@ const Navbar = () => {
 
   return (
     <nav className={`p-6 ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white text-lg font-bold">
-          Shelly Tours
+      <div className="container">
+        <Link to="/" className="nav-header">
+          <span>Shelly Tours</span>
         </Link>
         <div className="lg:hidden">
           <button
@@ -38,49 +37,19 @@ const Navbar = () => {
             className="text-white focus:outline-none menu"
             aria-label="Toggle Menu"
           >
-            {isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-            )}
+            <i className="fa-solid fa-bars"></i>
           </button>
         </div>
         <div
           className={`${
             isMenuOpen ? 'render' : ''
-          } lg:flex space-x-4 navigation flex`}
+          } navigation`}
         >
           <NavLink
             to="/"
             isActive={() => location.pathname === '/'}
-            className="text-white"
-            activeClassName="border-b-2 border-white"
+            className="nav-link"
+            activeClassName="active"
             onClick={toggleMenu}
           >
             Home
@@ -88,8 +57,8 @@ const Navbar = () => {
           <NavLink
             to="/services"
             isActive={() => location.pathname === '/services'}
-            className="text-white"
-            activeClassName="border-b-2 border-white"
+            className="nav-link"
+            activeClassName="active"
             onClick={toggleMenu}
           >
             Services
@@ -97,8 +66,8 @@ const Navbar = () => {
           <NavLink
             to="/about"
             isActive={() => location.pathname === '/about'}
-            className="text-white"
-            activeClassName="border-b-2 border-white"
+            className="nav-link"
+            activeClassName="active"
             onClick={toggleMenu}
           >
             About
@@ -106,8 +75,8 @@ const Navbar = () => {
           <NavLink
             to="/contact"
             isActive={() => location.pathname === '/contact'}
-            className="text-white"
-            activeClassName="border-b-2 border-white"
+            className="nav-link"
+            activeClassName="active"
             onClick={toggleMenu}
           >
             Contact
