@@ -19,12 +19,58 @@
 }
 
 .form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fbf8f1;
   width: 85%;
   padding-block: 40px;
   margin-top: -4rem;
   margin-inline: auto;
   z-index: 10;
+}
+
+.form-div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px; 
+}
+
+.form-div form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div form .text-red-500 {
+  color: red;
+}
+
+.form-div form input,
+.form-div form textarea {
+  padding: 5px 20px;
+  border: 1.3px solid rgb(37, 37, 37);
+  background: transparent;
+  width: 350px;
+}
+
+.form-div form button {
+  background: #343536;
+  color: rgb(242, 174, 48);
+  font-size: 17px;
+  padding: 8px 15px;
+  border: none;
+}
+
+.form-div form button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 @media (max-width: 900px) {

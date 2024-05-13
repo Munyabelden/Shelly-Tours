@@ -28,7 +28,17 @@ const Footer = () => {
           <li><span>Hotel Booking</span></li>
           <li><span>Airpot Transportation Services</span></li>
           <li><span>Hotel pickup and drop-offs</span></li>
-          <li><a href="www.http.com"><i className="fa-brands fa-facebook"></i></a></li>
+          <li><span>Lion's head tour/hiking</span></li>
+          <li><span>Table Mountain tour/hiking</span></li>
+          <li><span>Robben Island</span></li>
+          <li><span>Monkyland</span></li>
+          <li><span>Kristenbosch Botanic Gardens</span></li>
+          <li><span>And more....</span></li>
+          <ol>
+            <li><a href="https://www.facebook.com/share/p/j6KYfDqN7QRNpnY6/?mibextid=qi2Omg" target="_blank"><i className="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://wa.me/27793085627" target="_blank"><i className="fab fa-whatsapp-square"></i></a></li>
+            <li><a href="https://www.instagram.com/p/C5gkTPErNBx/?igsh=MXkxZ3QzOXNpNjJ6cg==" target="_blank"><i className="fa-brands fa-square-instagram"></i></a></li>
+          </ol>
         </ul>
       </div>
       <span>&copy; <strong>2024 Shelly Tours.</strong> All rights reserved, made by <strong>Nate~Mel</strong></span>

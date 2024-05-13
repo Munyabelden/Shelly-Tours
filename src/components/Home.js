@@ -102,6 +102,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="payments">
+          <p>For payment <a href="https://pay.yoco.com/shelly-tours" target="_blank">Click here</a></p>
+      </div>
       <Footer />
     </div>
   )

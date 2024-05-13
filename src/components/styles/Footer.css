@@ -48,13 +48,24 @@
 
 .footer > span {
   color: rgb(179, 173, 170);
-  margin-top: 30px;
-  padding-inline: 5%;
+  margin-top: 50px;
+  margin-inline: 5%;
 }
 
-.footer div ul li:last-child {
+.footer div ol {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer div ol li {
   margin-top: 20px;
+  margin-right: 15px;
   font-size: 32px;
+  list-style: none;
+}
+
+.footer div ol li a {
+  color: #8a8c8f;
 }
 
 @media (max-width: 850px) {

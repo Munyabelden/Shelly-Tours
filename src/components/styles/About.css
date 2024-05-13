@@ -1,5 +1,6 @@
 .values-section {
   margin-bottom: 140px;
+  margin-inline: 5%;
 }
 
 .values-section .values {
@@ -51,6 +52,7 @@
 
 .who-we-are div {
   background: rgb(228, 164, 26);
+  padding: 100px 40px;
 }
 
 .who-we-are div p:last-child {
@@ -60,6 +62,7 @@
 @media (max-width: 1000px) {
   .who-we-are div {
     background: rgb(246, 197, 93);
+    padding-inline: 5%;
   }
 
   .who-we-are img {

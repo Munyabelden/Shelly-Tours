@@ -156,6 +156,28 @@ nav.scrolled {
   z-index: 10000;
 }
 
+.payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 40px;
+  margin-inline: auto;
+  width: 90%;
+  background: rgb(46, 47, 48);
+  color: #fff;
+  height: 300px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.payments p a {
+  color: rgb(231, 150, 83);
+  font-weight: 600;
+}
+
 @media (max-width: 1000px) {
   .menu {
     display: block;
